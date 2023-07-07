@@ -11,6 +11,6 @@ message Log {
 
 message LogRequest { Log logEntry = 1; }
 
-message LogResponse { string response = 1; }
+message LogResponse { string result = 1; }
 
 service LogService { rpc WriteLog(LogRequest) returns (LogResponse); }
